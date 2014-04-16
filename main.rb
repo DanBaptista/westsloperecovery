@@ -12,6 +12,8 @@ if is_a_mac
     system("open", my_html_page)
 elsif is_a_pc
     system("start #{my_html_page}")
+elsif is_a_linux
+    system "xdg-open #{my_html_page}")
 else
-    print 'unrecognized OS\n'
+    print "unrecognized OS\n"
 end
