@@ -15,5 +15,6 @@ elsif is_a_pc
 elsif is_a_linux
     system "xdg-open #{my_html_page}"
 else
-    print "unrecognized OS\n"
+    print "\"#{RUBY_PLATFORM}\" is an unrecognized OS\n"
 end
+
